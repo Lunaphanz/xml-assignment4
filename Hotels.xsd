@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           xmlns:xsi="https://lunaphanz.github.io/xml-assignment4/Hotels.xsd"
+<xs:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+           xmlns="https://lunaphanz.github.io/xml-assignment4/Hotels.xsd"
+           targetNamespace="https://lunaphanz.github.io/xml-assignment4/Hotels.xsd"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified">
 

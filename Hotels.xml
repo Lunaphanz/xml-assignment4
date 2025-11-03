@@ -7,26 +7,24 @@
     <Name>Grand Plaza Hotel</Name>
     <Phone>480-555-0100</Phone>
     <Phone>480-555-0199</Phone>
-    <Address>
+    <Address NearestAirport="Sky Harbor">
       <Number>123</Number>
       <Street>Main Street</Street>
       <City>Tempe</City>
       <State>AZ</State>
       <Zip>85281</Zip>
-      <NearestAirport>Sky Harbor</NearestAirport>
     </Address>
   </Hotel>
 
   <Hotel Rating="3.8">
     <Name>Sunset Inn</Name>
     <Phone>602-555-0200</Phone>
-    <Address>
+    <Address NearestAirport="Phoenix Airport">
       <Number>456</Number>
       <Street>University Drive</Street>
       <City>Phoenix</City>
       <State>AZ</State>
       <Zip>85004</Zip>
-      <NearestAirport>Phoenix Airport</NearestAirport>
     </Address>
   </Hotel>
 
@@ -34,13 +32,12 @@
     <Name>Mountain View Resort</Name>
     <Phone>928-555-0300</Phone>
     <Phone>928-555-0399</Phone>
-    <Address>
+    <Address NearestAirport="Flagstaff Pulliam Airport">
       <Number>789</Number>
       <Street>Resort Boulevard</Street>
       <City>Flagstaff</City>
       <State>AZ</State>
       <Zip>86001</Zip>
-      <NearestAirport>Flagstaff Pulliam Airport</NearestAirport>
     </Address>
   </Hotel>
 </Hotels>
