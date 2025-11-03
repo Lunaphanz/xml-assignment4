@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Hotels xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:noNamespaceSchemaLocation="Hotels.xsd">
+        xmlns="http://www.w3schools.com"
+        xsi:schemaLocation="http://www.w3schools.com Hotels.xsd">
 
   <Hotel Rating="4.5">
     <Name>Grand Plaza Hotel</Name>
@@ -42,5 +43,4 @@
       <NearestAirport>Flagstaff Pulliam Airport</NearestAirport>
     </Address>
   </Hotel>
-
 </Hotels>
