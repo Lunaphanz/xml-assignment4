@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Hotels xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="Hotels.xsd">
+    
+    <!-- Error 1: Missing required id attribute -->
+    <Hotel>
+        <Name>Hotel Without ID</Name>
+        <Address>
+            <Street>123 Error Street</Street>
+            <City>Error City</City>
+            <State>Error State</State>
+            <ZipCode>12345</ZipCode>
+            <Country>USA</Country>
+        </Address>
+        <Phone>555-0100</Phone>
+        <Rating>3.5</Rating>
+        <Rooms>
+            <Room>
+                <RoomNumber>101</RoomNumber>
+                <Type>Standard</Type>
+                <Price>99.99</Price>
+                <Available>true</Available>
+                <Capacity>2</Capacity>
+            </Room>
+        </Rooms>
+    </Hotel>
+    
+    <!-- Error 2: Missing required Name element -->
+    <Hotel id="hotel2">
+        <Address>
+            <Street>456 Missing Name Street</Street>
+            <City>City</City>
+            <State>State</State>
+            <ZipCode>54321</ZipCode>
+            <Country>USA</Country>
+        </Address>
+        <Phone>555-0200</Phone>
+        <Rating>4.0</Rating>
+        <Rooms>
+            <Room>
+                <RoomNumber>201</RoomNumber>
+                <Type>Deluxe</Type>
+                <Price>149.99</Price>
+                <Available>true</Available>
+                <Capacity>4</Capacity>
+            </Room>
+        </Rooms>
+    </Hotel>
+    
+    <!-- Error 3: Wrong data type for Rating (string instead of decimal) -->
+    <Hotel id="hotel3">
+        <Name>Hotel With Wrong Rating Type</Name>
+        <Address>
+            <Street>789 Type Error Street</Street>
+            <City>Type City</City>
+            <State>Type State</State>
+            <ZipCode>98765</ZipCode>
+            <Country>USA</Country>
+        </Address>
+        <Phone>555-0300</Phone>
+        <Rating>Very Good</Rating>
+        <Rooms>
+            <Room>
+                <RoomNumber>301</RoomNumber>
+                <Type>Standard</Type>
+                <Price>89.99</Price>
+                <Available>true</Available>
+                <Capacity>2</Capacity>
+            </Room>
+        </Rooms>
+    </Hotel>
+    
+    <!-- Error 4: Missing required Address element -->
+    <Hotel id="hotel4">
+        <Name>Hotel Without Address</Name>
+        <Phone>555-0400</Phone>
+        <Rating>3.8</Rating>
+        <Rooms>
+            <Room>
+                <RoomNumber>401</RoomNumber>
+                <Type>Standard</Type>
+                <Price>79.99</Price>
+                <Available>true</Available>
+                <Capacity>2</Capacity>
+            </Room>
+        </Rooms>
+    </Hotel>
+    
+    <!-- Error 5: Missing required Phone element -->
+    <Hotel id="hotel5">
+        <Name>Hotel Without Phone</Name>
+        <Address>
+            <Street>321 Missing Phone Street</Street>
+            <City>Phone City</City>
+            <State>Phone State</State>
+            <ZipCode>11111</ZipCode>
+            <Country>USA</Country>
+        </Address>
+        <Rating>4.2</Rating>
+        <Rooms>
+            <Room>
+                <RoomNumber>501</RoomNumber>
+                <Type>Suite</Type>
+                <Price>199.99</Price>
+                <Available>true</Available>
+                <Capacity>6</Capacity>
+            </Room>
+        </Rooms>
+    </Hotel>
+    
+    <!-- Error 6: Wrong data type for Price (string instead of decimal) -->
+    <Hotel id="hotel6">
+        <Name>Hotel With Wrong Price Type</Name>
+        <Address>
+            <Street>654 Price Error Street</Street>
+            <City>Price City</City>
+            <State>Price State</State>
+            <ZipCode>22222</ZipCode>
+            <Country>USA</Country>
+        </Address>
+        <Phone>555-0600</Phone>
+        <Rating>4.1</Rating>
+        <Rooms>
+            <Room>
+                <RoomNumber>601</RoomNumber>
+                <Type>Standard</Type>
+                <Price>One hundred dollars</Price>
+                <Available>true</Available>
+                <Capacity>2</Capacity>
+            </Room>
+        </Rooms>
+    </Hotel>
+    
+    <!-- Error 7: Wrong data type for Available (string instead of boolean) -->
+    <Hotel id="hotel7">
+        <Name>Hotel With Wrong Available Type</Name>
+        <Address>
+            <Street>987 Boolean Error Street</Street>
+            <City>Boolean City</City>
+            <State>Boolean State</State>
+            <ZipCode>33333</ZipCode>
+            <Country>USA</Country>
+        </Address>
+        <Phone>555-0700</Phone>
+        <Rating>3.9</Rating>
+        <Rooms>
+            <Room>
+                <RoomNumber>701</RoomNumber>
+                <Type>Standard</Type>
+                <Price>95.99</Price>
+                <Available>yes</Available>
+                <Capacity>2</Capacity>
+            </Room>
+        </Rooms>
+    </Hotel>
+    
+    <!-- Error 8: Wrong data type for Capacity (negative number, not positiveInteger) -->
+    <Hotel id="hotel8">
+        <Name>Hotel With Negative Capacity</Name>
+        <Address>
+            <Street>147 Capacity Error Street</Street>
+            <City>Capacity City</City>
+            <State>Capacity State</State>
+            <ZipCode>44444</ZipCode>
+            <Country>USA</Country>
+        </Address>
+        <Phone>555-0800</Phone>
+        <Rating>4.3</Rating>
+        <Rooms>
+            <Room>
+                <RoomNumber>801</RoomNumber>
+                <Type>Standard</Type>
+                <Price>109.99</Price>
+                <Available>true</Available>
+                <Capacity>-1</Capacity>
+            </Room>
+        </Rooms>
+    </Hotel>
+    
+    <!-- Error 9: Missing required Rooms element -->
+    <Hotel id="hotel9">
+        <Name>Hotel Without Rooms</Name>
+        <Address>
+            <Street>258 Missing Rooms Street</Street>
+            <City>Rooms City</City>
+            <State>Rooms State</State>
+            <ZipCode>55555</ZipCode>
+            <Country>USA</Country>
+        </Address>
+        <Phone>555-0900</Phone>
+        <Rating>4.0</Rating>
+    </Hotel>
+    
+    <!-- Error 10: Empty Rooms (missing required Room element) -->
+    <Hotel id="hotel10">
+        <Name>Hotel With Empty Rooms</Name>
+        <Address>
+            <Street>369 Empty Rooms Street</Street>
+            <City>Empty City</City>
+            <State>Empty State</State>
+            <ZipCode>66666</ZipCode>
+            <Country>USA</Country>
+        </Address>
+        <Phone>555-1000</Phone>
+        <Rating>3.7</Rating>
+        <Rooms>
+        </Rooms>
+    </Hotel>
+    
+    <!-- Error 11: Missing required element in Address (Street) -->
+    <Hotel id="hotel11">
+        <Name>Hotel With Incomplete Address</Name>
+        <Address>
+            <City>Incomplete City</City>
+            <State>Incomplete State</State>
+            <ZipCode>77777</ZipCode>
+            <Country>USA</Country>
+        </Address>
+        <Phone>555-1100</Phone>
+        <Rating>4.4</Rating>
+        <Rooms>
+            <Room>
+                <RoomNumber>1101</RoomNumber>
+                <Type>Standard</Type>
+                <Price>119.99</Price>
+                <Available>true</Available>
+                <Capacity>2</Capacity>
+            </Room>
+        </Rooms>
+    </Hotel>
+    
+    <!-- Error 12: Invalid element name (typo) -->
+    <Hotel id="hotel12">
+        <Name>Hotel With Typo</Name>
+        <Address>
+            <Street>741 Typo Street</Street>
+            <City>Typo City</City>
+            <State>Typo State</State>
+            <ZipCode>88888</ZipCode>
+            <Country>USA</Country>
+        </Address>
+        <Phone>555-1200</Phone>
+        <Rating>4.6</Rating>
+        <Rooms>
+            <Room>
+                <RoomNumber>1201</RoomNumber>
+                <Type>Standard</Type>
+                <Price>129.99</Price>
+                <Available>true</Available>
+                <Capacity>2</Capacity>
+            </Room>
+        </Rooms>
+        <InvalidElement>This should cause an error</InvalidElement>
+    </Hotel>
+    
+</Hotels>

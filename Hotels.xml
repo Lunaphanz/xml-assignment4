@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Hotels xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="Hotels.xsd">
+    
+    <Hotel id="hotel1">
+        <Name>Grand Plaza Hotel</Name>
+        <Address>
+            <Street>123 Main Street</Street>
+            <City>Tempe</City>
+            <State>Arizona</State>
+            <ZipCode>85281</ZipCode>
+            <Country>USA</Country>
+        </Address>
+        <Phone>480-555-0100</Phone>
+        <Email>info@grandplaza.com</Email>
+        <Website>www.grandplaza.com</Website>
+        <Rating>4.5</Rating>
+        <Rooms>
+            <Room>
+                <RoomNumber>101</RoomNumber>
+                <Type>Standard</Type>
+                <Price>99.99</Price>
+                <Available>true</Available>
+                <Capacity>2</Capacity>
+                <BedType>Queen</BedType>
+                <Description>Comfortable room with city view</Description>
+            </Room>
+            <Room>
+                <RoomNumber>102</RoomNumber>
+                <Type>Deluxe</Type>
+                <Price>149.99</Price>
+                <Available>false</Available>
+                <Capacity>4</Capacity>
+                <BedType>King</BedType>
+                <Description>Spacious room with balcony</Description>
+            </Room>
+            <Room>
+                <RoomNumber>201</RoomNumber>
+                <Type>Suite</Type>
+                <Price>249.99</Price>
+                <Available>true</Available>
+                <Capacity>6</Capacity>
+                <BedType>King + Sofa Bed</BedType>
+                <Description>Luxury suite with living area</Description>
+            </Room>
+        </Rooms>
+        <Amenities>
+            <Amenity>WiFi</Amenity>
+            <Amenity>Pool</Amenity>
+            <Amenity>Gym</Amenity>
+            <Amenity>Restaurant</Amenity>
+            <Amenity>Room Service</Amenity>
+        </Amenities>
+    </Hotel>
+    
+    <Hotel id="hotel2">
+        <Name>Sunset Inn</Name>
+        <Address>
+            <Street>456 University Drive</Street>
+            <City>Phoenix</City>
+            <State>Arizona</State>
+            <ZipCode>85004</ZipCode>
+            <Country>USA</Country>
+        </Address>
+        <Phone>602-555-0200</Phone>
+        <Email>reservations@sunsetinn.com</Email>
+        <Website>www.sunsetinn.com</Website>
+        <Rating>3.8</Rating>
+        <Rooms>
+            <Room>
+                <RoomNumber>301</RoomNumber>
+                <Type>Standard</Type>
+                <Price>79.99</Price>
+                <Available>true</Available>
+                <Capacity>2</Capacity>
+                <BedType>Double</BedType>
+            </Room>
+            <Room>
+                <RoomNumber>302</RoomNumber>
+                <Type>Standard</Type>
+                <Price>79.99</Price>
+                <Available>true</Available>
+                <Capacity>2</Capacity>
+                <BedType>Queen</BedType>
+            </Room>
+        </Rooms>
+        <Amenities>
+            <Amenity>WiFi</Amenity>
+            <Amenity>Free Parking</Amenity>
+            <Amenity>Breakfast</Amenity>
+        </Amenities>
+    </Hotel>
+    
+    <Hotel id="hotel3">
+        <Name>Mountain View Resort</Name>
+        <Address>
+            <Street>789 Resort Boulevard</Street>
+            <City>Flagstaff</City>
+            <State>Arizona</State>
+            <ZipCode>86001</ZipCode>
+            <Country>USA</Country>
+        </Address>
+        <Phone>928-555-0300</Phone>
+        <Rating>4.9</Rating>
+        <Rooms>
+            <Room>
+                <RoomNumber>501</RoomNumber>
+                <Type>Presidential Suite</Type>
+                <Price>499.99</Price>
+                <Available>true</Available>
+                <Capacity>8</Capacity>
+                <BedType>Multiple King Beds</BedType>
+                <Description>Ultra-luxury suite with mountain views</Description>
+            </Room>
+            <Room>
+                <RoomNumber>502</RoomNumber>
+                <Type>Executive</Type>
+                <Price>199.99</Price>
+                <Available>false</Available>
+                <Capacity>4</Capacity>
+                <BedType>King</BedType>
+            </Room>
+        </Rooms>
+        <Amenities>
+            <Amenity>WiFi</Amenity>
+            <Amenity>Pool</Amenity>
+            <Amenity>Spa</Amenity>
+            <Amenity>Gym</Amenity>
+            <Amenity>Restaurant</Amenity>
+            <Amenity>Bar</Amenity>
+            <Amenity>Concierge</Amenity>
+        </Amenities>
+    </Hotel>
+    
+</Hotels>
