@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsi="https://lunaphanz.github.io/xml-assignment4/Hotels.xsd"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified">
 
@@ -20,12 +20,12 @@
                     <xs:element name="City" type="xs:string"/>
                     <xs:element name="State" type="xs:string"/>
                     <xs:element name="Zip" type="xs:string"/>
-                    <xs:element name="NearestAirport" type="xs:string" minOccurs="0"/>
                   </xs:sequence>
+                  <xs:attribute name="NearestAirport" type="xs:string" use="required"/>
                 </xs:complexType>
               </xs:element>
             </xs:sequence>
-            <xs:attribute name="Rating" type="xs:decimal" use="optional"/>
+            <xs:attribute name="Rating" type="xs:float" use="optional"/>
           </xs:complexType>
         </xs:element>
       </xs:sequence>
