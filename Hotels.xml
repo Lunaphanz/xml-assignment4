@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Hotels xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xmlns="https://lunaphanz.github.io/xml-assignment4/Hotels.xsd"
-        xsi:schemaLocation="https://lunaphanz.github.io/xml-assignment4/Hotels.xsd">
+<Hotels xmlns="https://lunaphanz.github.io/xml-assignment4"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="https://lunaphanz.github.io/xml-assignment4 Hotels.xsd">
 
   <Hotel Rating="4.5">
     <Name>Grand Plaza Hotel</Name>
