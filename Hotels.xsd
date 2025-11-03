@@ -1,46 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Hotels xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xmlns="http://www.w3schools.com"
-        xsi:schemaLocation="http://www.w3schools.com Hotels.xsd">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
 
-  <Hotel Rating="4.5">
-    <Name>Grand Plaza Hotel</Name>
-    <Phone>480-555-0100</Phone>
-    <Phone>480-555-0199</Phone>
-    <Address>
-      <Number>123</Number>
-      <Street>Main Street</Street>
-      <City>Tempe</City>
-      <State>AZ</State>
-      <Zip>85281</Zip>
-      <NearestAirport>Sky Harbor</NearestAirport>
-    </Address>
-  </Hotel>
+  <xs:element name="Hotels">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Hotel" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" type="xs:string"/>
+              <xs:element name="Phone" type="xs:string" maxOccurs="unbounded"/>
+              <xs:element name="Address">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Number" type="xs:string"/>
+                    <xs:element name="Street" type="xs:string"/>
+                    <xs:element name="City" type="xs:string"/>
+                    <xs:element name="State" type="xs:string"/>
+                    <xs:element name="Zip" type="xs:string"/>
+                    <xs:element name="NearestAirport" type="xs:string" minOccurs="0"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="Rating" type="xs:decimal" use="optional"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
 
-  <Hotel Rating="3.8">
-    <Name>Sunset Inn</Name>
-    <Phone>602-555-0200</Phone>
-    <Address>
-      <Number>456</Number>
-      <Street>University Drive</Street>
-      <City>Phoenix</City>
-      <State>AZ</State>
-      <Zip>85004</Zip>
-      <NearestAirport>Phoenix Airport</NearestAirport>
-    </Address>
-  </Hotel>
-
-  <Hotel Rating="4.9">
-    <Name>Mountain View Resort</Name>
-    <Phone>928-555-0300</Phone>
-    <Phone>928-555-0399</Phone>
-    <Address>
-      <Number>789</Number>
-      <Street>Resort Boulevard</Street>
-      <City>Flagstaff</City>
-      <State>AZ</State>
-      <Zip>86001</Zip>
-      <NearestAirport>Flagstaff Pulliam Airport</NearestAirport>
-    </Address>
-  </Hotel>
-</Hotels>
+</xs:schema>
